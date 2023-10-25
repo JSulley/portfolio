@@ -1,5 +1,6 @@
 import Certificates from "@/components/certificates/certificates";
 import Education from "@/components/education/education";
+import Projects from "@/components/projects/projects";
 
 const certificates = [
   {
@@ -42,7 +43,7 @@ const certificates = [
     'description': 'Voluptate officia deserunt proident id ut culpa aliqua sit mollit sit deserunt.',
     'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/G54R8FDXKV57',
   },
-]
+];
 
 const degrees = [
   {
@@ -57,7 +58,24 @@ const degrees = [
     'university': 'Texas A&M University-Central Texas',
     'timeFrame': '2018 - 2020'
   },
-]
+];
+
+const projects = [
+  {
+    'id': 1,
+    'title': 'NASA Mission Control Project',
+    'description': 'Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.',
+    'techStack': 'Lorem',
+    'repoLink': 'GitHub Repo'
+  },
+  {
+    'id': 2,
+    'title': 'Solar Cell Research Application',
+    'description': 'Culpa in officia eu est anim cillum.',
+    'techStack': 'Lorem',
+    'repoLink': 'GitHub Repo'
+  }
+];
 
 export default function Home() {
   return (
@@ -66,26 +84,10 @@ export default function Home() {
       <h3>Aspiring Data Scientist/Software Engineer</h3>
       <h3>About Me</h3>
       <p>Sint Lorem est dolor labore exercitation Lorem nisi laboris ex mollit.</p>
-      
-      <h2>Projects</h2>
-      <h3>NASA Mission Control Project</h3>
-      <p>Project Description: Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.</p>
-      <p>Technologies Used</p>
-      <ul>
-        <li>Skill</li>
-      </ul>
-      <a>GitHub Repo</a>
 
-      <h3>Solar Cell Research Application</h3>
-      <p>Project Description: Culpa in officia eu est anim cillum.</p>
-      <p>Technologies Used</p>
-      <ul>
-        <li>Skill</li>
-      </ul>
-      <a>GitHub Repo</a>
-
+      <Projects projects={projects} />
       <Education degrees={degrees} />
       <Certificates certificates={certificates} />
     </main>
-  )
+  );
 }
