@@ -1,7 +1,9 @@
 import Certificates from "@/components/certificates/certificates";
+import Education from "@/components/education/education";
 
 const certificates = [
   {
+    'id': 1,
     'name': 'C Programming with Linux Specialization',
     'skillsLearned': 'Lorem',
     'dateReceived': 'September 2023',
@@ -9,6 +11,7 @@ const certificates = [
     'hyperlink': 'https://www.coursera.org/account/accomplishments/specialization/certificate/P87AL4S9V3HF',
   },
   {
+    'id': 2,
     'name': 'Django Web Framework',
     'skillsLearned': 'Lorem',
     'dateReceived': 'August 2023',
@@ -16,6 +19,7 @@ const certificates = [
     'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/R5ZPX7HS6XHZ',
   },
   {
+    'id': 3,
     'name': 'Introduction to Databases for Back-End Development',
     'skillsLearned': 'Lorem',
     'dateReceived': 'February 2023',
@@ -23,6 +27,7 @@ const certificates = [
     'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/54XGZYBWTT9C',
   },
   {
+    'id': 4,
     'name': 'Programming with JavaScript',
     'skillsLearned': 'Lorem',
     'dateReceived': 'September 2022',
@@ -30,11 +35,27 @@ const certificates = [
     'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/EHGYTLVDQRQH',
   },
   {
+    'id': 5,
     'name': 'Programming in Python',
     'skillsLearned': 'Lorem',
     'dateReceived': 'August 2022',
     'description': 'Voluptate officia deserunt proident id ut culpa aliqua sit mollit sit deserunt.',
     'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/G54R8FDXKV57',
+  },
+]
+
+const degrees = [
+  {
+    'id': 1,
+    'title': 'Master of Science in Mathematics',
+    'university': 'Texas A&M University-Central Texas',
+    'timeFrame': '2020 - 2022'
+  },
+  {
+    'id': 2,
+    'title': 'Bachelor of Science in Mathematics',
+    'university': 'Texas A&M University-Central Texas',
+    'timeFrame': '2018 - 2020'
   },
 ]
 
@@ -63,15 +84,8 @@ export default function Home() {
       </ul>
       <a>GitHub Repo</a>
 
-      <h2>Education</h2>
-      <h3>Degree: Master of Science in Mathematics</h3>
-      <h4>University: Texas A&M University-Central Texas</h4>
-      <h4>Time Frame: 2020 - 2022</h4>
-      <h3>Degree: Bachelor of Science in Mathematics</h3>
-      <h4>University: Texas A&M University-Central Texas</h4>
-      <h4>Time Frame: 2018 - 2020</h4>
-
-      <Certificates certificates={certificates}/>
+      <Education degrees={degrees} />
+      <Certificates certificates={certificates} />
     </main>
   )
 }
