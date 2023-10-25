@@ -66,14 +66,14 @@ const projects = [
     'title': 'NASA Mission Control Project',
     'description': 'Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.',
     'techStack': 'Lorem',
-    'repoLink': 'GitHub Repo'
+    'repoLink': 'https://github.com/JSulley/nasa-project'
   },
   {
     'id': 2,
     'title': 'Solar Cell Research Application',
     'description': 'Culpa in officia eu est anim cillum.',
     'techStack': 'Lorem',
-    'repoLink': 'GitHub Repo'
+    'repoLink': 'https://github.com/JSulley/Solar-Cell-Research-Application'
   }
 ];
 

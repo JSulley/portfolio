@@ -9,7 +9,7 @@ export default function ProjectItem({ project }) {
       <ul>
         <li>Skill</li>
       </ul>
-      <a>{repoLink}</a>
+      <a href={repoLink} target="_blank">View on GitHub</a>
     </div>
   );
 };
