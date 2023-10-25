@@ -1,3 +1,43 @@
+import Certificates from "@/components/certificates/certificates";
+
+const certificates = [
+  {
+    'name': 'C Programming with Linux Specialization',
+    'skillsLearned': 'Lorem',
+    'dateReceived': 'September 2023',
+    'description': 'Ad occaecat magna dolore nisi elit.',
+    'hyperlink': 'https://www.coursera.org/account/accomplishments/specialization/certificate/P87AL4S9V3HF',
+  },
+  {
+    'name': 'Django Web Framework',
+    'skillsLearned': 'Lorem',
+    'dateReceived': 'August 2023',
+    'description': 'Nulla enim ea excepteur cupidatat et deserunt voluptate reprehenderit id excepteur exercitation ea.',
+    'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/R5ZPX7HS6XHZ',
+  },
+  {
+    'name': 'Introduction to Databases for Back-End Development',
+    'skillsLearned': 'Lorem',
+    'dateReceived': 'February 2023',
+    'description': 'Minim cillum culpa deserunt nisi anim occaecat occaecat adipisicing dolore elit nulla ex anim.',
+    'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/54XGZYBWTT9C',
+  },
+  {
+    'name': 'Programming with JavaScript',
+    'skillsLearned': 'Lorem',
+    'dateReceived': 'September 2022',
+    'description': 'Minim cillum culpa deserunt nisi anim occaecat occaecat adipisicing dolore elit nulla ex anim.',
+    'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/EHGYTLVDQRQH',
+  },
+  {
+    'name': 'Programming in Python',
+    'skillsLearned': 'Lorem',
+    'dateReceived': 'August 2022',
+    'description': 'Voluptate officia deserunt proident id ut culpa aliqua sit mollit sit deserunt.',
+    'hyperlink': 'https://www.coursera.org/account/accomplishments/certificate/G54R8FDXKV57',
+  },
+]
+
 export default function Home() {
   return (
     <main>
@@ -31,30 +71,7 @@ export default function Home() {
       <h4>University: Texas A&M University-Central Texas</h4>
       <h4>Time Frame: 2018 - 2020</h4>
 
-      <h2>Certifications</h2>
-      <h3>Name: C Programming with Linux Specialization</h3>
-      <p>Acquired Skills: Lorem</p>
-      <h4>Date Received: September 2023</h4>
-      <p>Description: Ad occaecat magna dolore nisi elit.</p>
-      <a>View Certificate</a>
-
-      <h3>Name: Introduction to Databases for Back-End Development</h3>
-      <p>Acquired Skills: Lorem</p>
-      <h4>Date Received: February 2023</h4>
-      <p>Description: Minim cillum culpa deserunt nisi anim occaecat occaecat adipisicing dolore elit nulla ex anim.</p>
-      <a>View Certificate</a>
-
-      <h3>Name: Programming with JavaScript</h3>
-      <p>Acquired Skills: Lorem</p>
-      <h4>Date Received: September 2022</h4>
-      <p>Description: Minim cillum culpa deserunt nisi anim occaecat occaecat adipisicing dolore elit nulla ex anim.</p>
-      <a>View Certificate</a>
-
-      <h3>Name: Programming with Python</h3>
-      <p>Acquired Skills: Lorem</p>
-      <h4>Date Received: August 2022</h4>
-      <p>Description: Voluptate officia deserunt proident id ut culpa aliqua sit mollit sit deserunt.</p>
-      <a>View Certificate</a>
+      <Certificates certificates={certificates}/>
     </main>
   )
 }
