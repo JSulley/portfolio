@@ -5,14 +5,43 @@ const projects = [
     'id': 1,
     'title': 'NASA Mission Control Project',
     'description': 'Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.',
-    'techStack': 'Lorem',
+    'techStack': [
+    {
+      'id': 1,
+      'skill': 'JavaScript'
+    },
+    {
+      'id': 2,
+      'skill': 'Node.js'
+    },
+    {
+      'id': 3,
+      'skill': 'Express.js'
+    },
+    {
+      'id': 4,
+      'skill': 'Jest'
+    }],
     'repoLink': 'https://github.com/JSulley/nasa-project'
   },
   {
     'id': 2,
     'title': 'Solar Cell Research Application',
     'description': 'Culpa in officia eu est anim cillum.',
-    'techStack': 'Lorem',
+    'techStack': [
+      {
+        'id': 1,
+        'skill': 'R',
+      },
+      {
+        'id': 1,
+        'skill': 'Shiny',
+      },
+      {
+        'id': 1,
+        'skill': 'ggplot2',
+      },
+    ],
     'repoLink': 'https://github.com/JSulley/Solar-Cell-Research-Application'
   }
 ];
@@ -20,8 +49,10 @@ const projects = [
 export default function Projects() {
   return (
     <div>
-      <h2>Projects</h2>
-      {projects.map(project => <ProjectItem key={project.id} project={project}/>)}
+      <h2 className="text-2xl mt-6 ml-2 mb-4">Projects</h2>
+      <div className="grid gap-3 grid-cols-2">
+        {projects.map(project => <ProjectItem key={project.id} project={project}/>)}
+      </div>
     </div>
   );
 };
