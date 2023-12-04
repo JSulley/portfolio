@@ -27,18 +27,18 @@ const projects = [
   {
     'id': 2,
     'title': 'Solar Cell Research Application',
-    'description': 'Culpa in officia eu est anim cillum.',
+    'description': 'Shiny web app built for the Engineering department at Texas A&M University-Central Texas.',
     'techStack': [
       {
         'id': 1,
         'skill': 'R',
       },
       {
-        'id': 1,
+        'id': 2,
         'skill': 'Shiny',
       },
       {
-        'id': 1,
+        'id': 3,
         'skill': 'ggplot2',
       },
     ],
