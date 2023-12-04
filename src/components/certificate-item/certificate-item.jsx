@@ -1,5 +1,6 @@
 export default function CertificateItem({ certificate }) {
   const { name, skillsLearned, dateReceived, description, hyperlink } = certificate;
+  
   return (
     <div className="even:mr-4 odd:ml-4 border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
       <h3 className="text-xl mb-2">{name}</h3>

@@ -69,7 +69,7 @@ const certificates = [
 
 export default function Certificates() {
   return (
-    <div class="">
+    <div>
       <h2 className="text-2xl mt-6 ml-2 mb-4">Certificates</h2>
       <div className="grid gap-3 grid-cols-2">
         {certificates.map(certificate => <CertificateItem key={certificate.id} certificate={certificate} />)}
