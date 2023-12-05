@@ -3,6 +3,26 @@ import ProjectItem from "../project-item/project-item";
 const projects = [
   {
     'id': 1,
+    'title': 'Portfolio',
+    'description': 'You\'re looking at it!',
+    'techStack': [
+      {
+        'id': 1,
+        'skill': 'JavaScript',
+      },
+      {
+        'id': 2,
+        'skill': 'Next.js',
+      },
+      {
+        'id': 3,
+        'skill': 'Tailwind',
+      }
+    ],
+    'repoLink': 'https://github.com/JSulley/portfolio'
+  },
+  {
+    'id': 2,
     'title': 'NASA Mission Control Project',
     'description': 'Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.',
     'techStack': [
@@ -25,7 +45,7 @@ const projects = [
     'repoLink': 'https://github.com/JSulley/nasa-project'
   },
   {
-    'id': 2,
+    'id': 3,
     'title': 'Solar Cell Research Application',
     'description': 'Shiny web app built for the Engineering department at Texas A&M University-Central Texas.',
     'techStack': [
