@@ -5,10 +5,10 @@ import Certificates from "@/components/certificates/certificates";
 export default function Home() {
   return (
     <main>
-      <h1>James Sullivan</h1>
-      <h3>Aspiring Data Scientist/Software Engineer</h3>
-      <h3>About Me</h3>
-      <p>Sint Lorem est dolor labore exercitation Lorem nisi laboris ex mollit.</p>
+      <div className="text-center">
+        <h1 className="text-5xl my-2">James Sullivan</h1>
+        <h3>Aspiring Data Scientist/Software Engineer</h3>
+      </div>
 
       <Projects />
       <Education />
