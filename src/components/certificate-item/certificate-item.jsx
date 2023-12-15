@@ -5,13 +5,15 @@ export default function CertificateItem({ certificate }) {
   const { name, skillsLearned, dateReceived, description, hyperlink } = certificate;
   
   return (
-    <div className="relative even:mr-4 odd:ml-4 border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
-      <div className="text-xl mb-2 hover:underline">
-        <a href={hyperlink}>
+    <div className="even:mr-4 odd:ml-4 border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
+      <div className="text-xl mb-2 align-middle">
+        <a href={hyperlink} target="_blank" className="hover:underline">
           {name}
-          <Image 
-              src={NewWindowIcon}
-              className="inline"
+          <Image
+            src={NewWindowIcon}
+            width={32}
+            height={32}
+            className="inline"
           />
         </a>
       </div>
