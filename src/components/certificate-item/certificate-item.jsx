@@ -19,7 +19,7 @@ export default function CertificateItem({ certificate }) {
       </div>
       {skillsLearned.map(skill => <div key={skill.id} className="border-2 border-[#9ecaff]/10 bg-[#9ecaff]/40 text-[#9ecaff] rounded-xl mx-1 p-1 inline-block sm:max-lg:my-1">{skill.skill}</div>)}
       <p className="mt-2">{dateReceived}</p>
-      <p className="break-all">{description}</p>
+      <p className="break-all hyphens-auto">{description}</p>
     </div>
   );
 };
