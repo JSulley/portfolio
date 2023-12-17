@@ -12,7 +12,7 @@ const socialPlatforms = [
     'id': 2,
     'icon': LinkedinIcon,
     'hyperlink': 'https://linkedin.com/in/jsulley'
-  },
+  }
 ]
 
 export default function Introduction() {
@@ -22,7 +22,7 @@ export default function Introduction() {
         <h3>Aspiring Software Engineer</h3>
         <div>
           {socialPlatforms.map(social => (
-            <a className="inline-block mt-2 mx-1" href={social.hyperlink} target="_blank">
+            <a key={social.id} className="inline-block mt-2 mx-1" href={social.hyperlink} target="_blank">
               <Image
                 src={social.icon}
                 width={32}
