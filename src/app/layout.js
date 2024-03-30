@@ -1,12 +1,15 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import PersonalIcon from "./JS Icon.png"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'James Sullivan',
   description: 'A portfolio website',
+  metadataBase: new URL("https://jamessullivan.dev/"),
+  openGraph: {
+    images: '/opengraph-image.png',
+  }
 }
 
 export default function RootLayout({ children }) {
