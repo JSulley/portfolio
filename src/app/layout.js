@@ -1,11 +1,12 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import PersonalIcon from "./JS Icon.png"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'James Sullivan',
-  description: '',
+  description: 'A portfolio website',
 }
 
 export default function RootLayout({ children }) {
