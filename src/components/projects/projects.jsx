@@ -24,7 +24,7 @@ const projects = [
   {
     'id': 2,
     'title': 'NASA Mission Control Project',
-    'description': 'Aliquip veniam commodo excepteur Lorem ullamco duis esse veniam nostrud elit ullamco.',
+    'description': 'React app leverages a Node API that lets users schedule missions to go to a habitable Kepler Exoplanet.',
     'techStack': [
     {
       'id': 1,
@@ -46,6 +46,30 @@ const projects = [
   },
   {
     'id': 3,
+    'title': 'Math Assessment',
+    'description': 'A mini quiz covering some college algebra concepts.',
+    'techStack': [
+    {
+      'id': 1,
+      'skill': 'HTML'
+    },
+    {
+      'id': 2,
+      'skill': 'CSS'
+    },
+    {
+      'id': 3,
+      'skill': 'Bootstrap'
+    },
+    {
+      'id': 4,
+      'skill': 'MathJax'
+    }],
+    'repoLink': 'https://github.com/JSulley/Math-Assessment',
+    'demoLink': 'https://jsulley.github.io/Math-Assessment'
+  },
+  {
+    'id': 4,
     'title': 'Solar Cell Research Application',
     'description': 'Shiny web app built for the Engineering department at Texas A&M University-Central Texas.',
     'techStack': [
@@ -62,7 +86,7 @@ const projects = [
         'skill': 'ggplot2',
       },
     ],
-    'repoLink': 'https://github.com/JSulley/Solar-Cell-Research-Application'
+    'repoLink': 'https://github.com/JSulley/Solar-Cell-Research-Application',
   }
 ];
 

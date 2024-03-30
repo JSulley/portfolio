@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GitHubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg"
+import LinkedinIcon from "../../../public/linkedin-icon.svg";
 
 const socialPlatforms = [
   {
@@ -11,7 +11,7 @@ const socialPlatforms = [
   {
     'id': 2,
     'icon': LinkedinIcon,
-    'hyperlink': 'https://linkedin.com/in/jsulley'
+    'hyperlink': 'https://linkedin.com/in/sullivan-james'
   }
 ]
 
@@ -19,7 +19,7 @@ export default function Introduction() {
     return (
       <div className="text-center">
         <h1 className="text-5xl my-2">James Sullivan</h1>
-        <h3>Aspiring Software Engineer</h3>
+        <h3>Aspiring Machine Learning Engineer</h3>
         <div>
           {socialPlatforms.map(social => (
             <a key={social.id} className="inline-block mt-2 mx-1" href={social.hyperlink} target="_blank">
