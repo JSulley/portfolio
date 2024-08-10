@@ -19,7 +19,6 @@ export default function Introduction() {
     return (
       <div className="text-center">
         <h1 className="text-5xl my-2">James Sullivan</h1>
-        <h3>Aspiring Machine Learning Engineer</h3>
         <div>
           {socialPlatforms.map(social => (
             <a key={social.id} className="inline-block mt-2 mx-1" href={social.hyperlink} target="_blank">
