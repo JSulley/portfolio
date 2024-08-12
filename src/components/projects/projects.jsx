@@ -93,8 +93,8 @@ const projects = [
 export default function Projects() {
   return (
     <div>
-      <h2 className="text-2xl mt-6 ml-2 mb-4">Projects</h2>
-      <div className="grid gap-3 grid-cols-2">
+      <h2 className="text-3xl m-6 text-center">Projects</h2>
+      <div className="flex flex-wrap flex-col space-y-4 m-4">
         {projects.map(project => <ProjectItem key={project.id} project={project}/>)}
       </div>
     </div>

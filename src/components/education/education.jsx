@@ -4,7 +4,7 @@ const degrees = [
   {
     'id': 1,
     'title': 'Bachelor of Science in Computer Science',
-    'university': 'University of Texas at San Antonio',
+    'university': 'The University of Texas at San Antonio',
     'timeFrame': 'January 2024 - May 2027'
   },
   {
