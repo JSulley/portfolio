@@ -26,7 +26,7 @@ function DemoLink({ project }) {
         src={LaunchDemoIcon}
         width={32}
         height={32}
-        className="inline opacity-40 hover:opacity-100"
+        className="ml-2 inline opacity-40 hover:opacity-100"
       />
     </a>
   );
@@ -57,7 +57,7 @@ export default function ProjectItem({ project }) {
       ))}
 
       {/* Project Links */}
-      <div className="m-1 text-center">
+      <div className="mb-1 mt-2 text-center">
         {("repoLink" in project) && <GitHubLink project={project}/>}
         {("demoLink" in project) && <DemoLink project={project}/>}
       </div>
