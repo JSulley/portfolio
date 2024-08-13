@@ -4,7 +4,7 @@ const projects = [
   {
     'id': 1,
     'title': 'Portfolio',
-    'description': 'You\'re looking at it! What\'s infinite recursion you ask? Well, click on that rocket icon below and find out!',
+    'description': 'You\'re looking at it! What\'s infinite recursion you ask? Well, click on that external link icon below (the one next to the GitHub icon) and find out!',
     'techStack': [
       {
         'id': 1,
