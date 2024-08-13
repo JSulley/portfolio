@@ -39,8 +39,8 @@ export default function ProjectItem({ project }) {
     <div className="border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
 
       {/* Project Title and Icon(s) */}
-      <div className="text-xl mb-2">
-        <span className="text-xl align-middle font-semibold">{title}</span>
+      <div className="mb-1">
+        <span className="text-xl font-semibold">{title}</span>
       </div>
 
       {/* Description */}
