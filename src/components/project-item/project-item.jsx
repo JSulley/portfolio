@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GitHubIcon from "../../../public/github-icon.svg";
-import LaunchDemoIcon from "../../../public/launch-demo-icon.svg";
+import ExternalLinkIcon from "../../../public/external-link-icon.svg";
 
 function GitHubLink({ project }) {
   const { repoLink } = project;
@@ -23,10 +23,10 @@ function DemoLink({ project }) {
   return (
     <a href={demoLink} target="_blank">
       <Image
-        src={LaunchDemoIcon}
+        src={ExternalLinkIcon}
         width={32}
         height={32}
-        className="inline opacity-40 hover:opacity-100"
+        className="ml-2 inline opacity-40 hover:opacity-100"
       />
     </a>
   );
@@ -38,13 +38,11 @@ export default function ProjectItem({ project }) {
   return (
     <div className="border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
 
-      {/* Project Title and Icon(s) */}
-      <div className="text-xl mb-2">
-        <span className="text-xl align-middle font-semibold">{title}</span>
-      </div>
+      {/* Project Title */}
+      <span className="text-xl font-semibold">{title}</span>
 
       {/* Description */}
-      <p className="mb-4">{description}</p>
+      <p className="mb-3">{description}</p>
 
       {/* Tech Stack */}
       {techStack.map((skill) => (
@@ -57,7 +55,7 @@ export default function ProjectItem({ project }) {
       ))}
 
       {/* Project Links */}
-      <div className="m-1 text-center">
+      <div className="mt-2 text-center">
         {("repoLink" in project) && <GitHubLink project={project}/>}
         {("demoLink" in project) && <DemoLink project={project}/>}
       </div>

@@ -4,7 +4,7 @@ const projects = [
   {
     'id': 1,
     'title': 'Portfolio',
-    'description': 'You\'re looking at it!',
+    'description': 'You\'re looking at it! What\'s infinite recursion you ask? Well, click on that external link icon below (the one next to the GitHub icon) and find out!',
     'techStack': [
       {
         'id': 1,
@@ -19,7 +19,8 @@ const projects = [
         'skill': 'Tailwind',
       }
     ],
-    'repoLink': 'https://github.com/JSulley/portfolio'
+    'repoLink': 'https://github.com/JSulley/portfolio',
+    'demoLink': 'https://jamessullivan.dev'
   },
   {
     'id': 2,
@@ -87,13 +88,14 @@ const projects = [
       },
     ],
     'repoLink': 'https://github.com/JSulley/Solar-Cell-Research-Application',
+    'demoLink': 'https://sulley.shinyapps.io/Solar_Cell_Research_App/'
   }
 ];
 
 export default function Projects() {
   return (
     <div>
-      <h2 className="text-3xl m-6 text-center">Projects</h2>
+      <h2 className="text-3xl mt-6 text-center font-bold">Projects</h2>
       <div className="flex flex-wrap flex-col space-y-4 m-4">
         {projects.map(project => <ProjectItem key={project.id} project={project}/>)}
       </div>
