@@ -38,10 +38,8 @@ export default function ProjectItem({ project }) {
   return (
     <div className="border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
 
-      {/* Project Title and Icon(s) */}
-      <div className="mb-1">
-        <span className="text-xl font-semibold">{title}</span>
-      </div>
+      {/* Project Title */}
+      <span className="text-xl font-semibold">{title}</span>
 
       {/* Description */}
       <p className="mb-4">{description}</p>
@@ -57,7 +55,7 @@ export default function ProjectItem({ project }) {
       ))}
 
       {/* Project Links */}
-      <div className="mb-1 mt-2 text-center">
+      <div className="mt-2 text-center">
         {("repoLink" in project) && <GitHubLink project={project}/>}
         {("demoLink" in project) && <DemoLink project={project}/>}
       </div>
