@@ -42,7 +42,7 @@ export default function ProjectItem({ project }) {
       <span className="text-xl font-semibold">{title}</span>
 
       {/* Description */}
-      <p className="mb-4">{description}</p>
+      <p className="mb-3">{description}</p>
 
       {/* Tech Stack */}
       {techStack.map((skill) => (
