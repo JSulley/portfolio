@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NewWindowIcon from "../../../public/new-window-icon.svg";
+import ExternalLinkIcon from "../../../public/external-link-icon.svg";
 
 export default function CertificateItem({ certificate }) {
   const { name, skillsLearned, dateReceived, description, hyperlink } = certificate;
@@ -10,7 +10,7 @@ export default function CertificateItem({ certificate }) {
         <a href={hyperlink} target="_blank" className="hover:underline">
           {name}
           <Image
-            src={NewWindowIcon}
+            src={ExternalLinkIcon}
             width={32}
             height={32}
             className="inline"

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import GitHubIcon from "../../../public/github-icon.svg";
-import LaunchDemoIcon from "../../../public/launch-demo-icon.svg";
+import ExternalLinkIcon from "../../../public/external-link-icon.svg";
 
 function GitHubLink({ project }) {
   const { repoLink } = project;
@@ -23,7 +23,7 @@ function DemoLink({ project }) {
   return (
     <a href={demoLink} target="_blank">
       <Image
-        src={LaunchDemoIcon}
+        src={ExternalLinkIcon}
         width={32}
         height={32}
         className="ml-2 inline opacity-40 hover:opacity-100"
