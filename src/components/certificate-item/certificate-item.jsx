@@ -29,7 +29,7 @@ export default function CertificateItem({ certificate }) {
       ))}
 
       {/* Link to Certificate */}
-      <a href={hyperlink} className="block mt-2 hover:underline">
+      <a href={hyperlink} className="block mt-2 text-center hover:underline">
         View Certificate
       </a>
     </div>
