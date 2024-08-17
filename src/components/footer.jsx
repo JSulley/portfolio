@@ -17,7 +17,7 @@ const socialPlatforms = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2d3748] h-[10rem] mt-20">
+    <footer className="bg-[#2d3748] h-[10rem] mt-12">
       <div className="grid grid-cols-2 h-[100%] place-items-center">
         
         {/* Personal Icon */}
