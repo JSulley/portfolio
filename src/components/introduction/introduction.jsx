@@ -1,6 +1,3 @@
-import Image from "next/image";
-
-
 export default function Introduction() {
     return (
       <div className="text-center">
