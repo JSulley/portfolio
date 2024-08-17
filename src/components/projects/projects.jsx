@@ -16,7 +16,7 @@ const projects = [
       },
       {
         'id': 3,
-        'skill': 'Tailwind',
+        'skill': 'Tailwind CSS',
       }
     ],
     'repoLink': 'https://github.com/JSulley/portfolio',
