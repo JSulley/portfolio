@@ -59,19 +59,20 @@ for (let i = 0; i < projectTitles.length; i++)
 
   for (let j = 0; j < projectSkills[i].length; j++)
   {
-    projects[i]['techStack'][j] = {
+    projects[i].techStack[j] = {
       'id': j+1,
       'skill': projectSkills[i][j],
     }
   }
-  if (projectLinks[i].repoLink !== null)
+
+  if (projectLinks[i].repoLink)
   {
-    projects[i]['repoLink'] = projectLinks[i].repoLink;
+    projects[i].repoLink = projectLinks[i].repoLink;
   }
 
-  if (projectLinks[i].demoLink !== null)
+  if (projectLinks[i].demoLink)
   {
-    projects[i]['demoLink'] = projectLinks[i].demoLink;
+    projects[i].demoLink = projectLinks[i].demoLink;
   }
 }
 
