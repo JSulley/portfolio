@@ -28,6 +28,7 @@ function DemoLink({ project }) {
         width={32}
         height={32}
         className="ml-2 inline opacity-40 hover:opacity-100"
+        alt="Icon of External Link"
       />
     </a>
   );
