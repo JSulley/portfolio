@@ -7,11 +7,13 @@ const socialPlatforms = [
     id: 1,
     icon: GitHubIcon,
     hyperlink: "https://github.com/JSulley",
+    iconDesc: "Icon of GitHub",
   },
   {
     id: 2,
     icon: LinkedinIcon,
     hyperlink: "https://linkedin.com/in/sullivan-james",
+    iconDesc: "Icon of LinkedIn",
   },
 ];
 
@@ -42,6 +44,7 @@ export default function Footer() {
                 width={32}
                 height={32}
                 className="opacity-40 hover:opacity-100"
+                alt={social.iconDesc}
               />
             </a>
           ))}

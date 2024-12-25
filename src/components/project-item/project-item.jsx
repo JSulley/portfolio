@@ -12,6 +12,7 @@ function GitHubLink({ project }) {
         width={32}
         height={32}
         className="inline opacity-40 hover:opacity-100"
+        alt="Icon of GitHub"
       />
     </a>
   )
