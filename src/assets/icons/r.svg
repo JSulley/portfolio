@@ -1,0 +1,7 @@
+<div class="flex items-center gap-1 bg-blue-800 text-white px-2 py-1 rounded-full text-sm">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 128 128">
+        <path
+            d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm4.5 96.2H51.2v-9.8h5.8V56.9h-5.8v-9.9h17.3c11.3 0 20.5 9.2 20.5 20.5s-9.2 20.5-20.5 20.5z" />
+    </svg>
+    <span>R</span>
+</div>
