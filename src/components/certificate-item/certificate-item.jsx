@@ -9,9 +9,9 @@ export default function CertificateItem({ certificate }) {
   } = certificate;
 
   return (
-    <div className="border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
+    <div className="relative h-[30em] border-2 border-gray-950 bg-gray-950 rounded-xl p-2">
       {/* Course Title */}
-      <span className="text-xl font-semibold">{name}</span>
+      <span className="text-white text-xl font-semibold">{name}</span>
 
       {/* Course Information */}
       <p>{institution}</p>

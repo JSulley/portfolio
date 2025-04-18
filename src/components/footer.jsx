@@ -1,17 +1,17 @@
 import Image from "next/image";
-import GitHubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
+import GitHub from "@/assets/icons/github.svg";
+import LinkedIn from "@/assets/icons/linkedin.svg";
 
 const socialPlatforms = [
   {
     id: 1,
-    icon: GitHubIcon,
+    icon: GitHub,
     hyperlink: "https://github.com/JSulley",
     iconDesc: "Icon of GitHub",
   },
   {
     id: 2,
-    icon: LinkedinIcon,
+    icon: LinkedIn,
     hyperlink: "https://linkedin.com/in/sullivan-james",
     iconDesc: "Icon of LinkedIn",
   },
@@ -21,10 +21,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#2d3748] h-[10rem] mt-12">
       <div className="grid grid-cols-2 h-[100%] place-items-center">
-        
-        {/* Personal Icon */}
         <Image
-          src="/icon.svg"
+          src="/personal-icon.svg"
           width={50}
           height={50}
           alt="James's personal icon"
