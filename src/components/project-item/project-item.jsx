@@ -1,6 +1,6 @@
 import Image from "next/image";
-import GitHubIcon from "../../../public/github-icon.svg";
-import ExternalLinkIcon from "../../../public/external-link-icon.svg";
+import GitHub from "@/assets/icons/github.svg";
+import ExternalLink from "@/assets/icons/external-link.svg";
 
 function GitHubLink({ project }) {
   const { repoLink } = project;
@@ -8,14 +8,14 @@ function GitHubLink({ project }) {
   return (
     <a href={repoLink} target="_blank">
       <Image
-        src={GitHubIcon}
+        src={GitHub}
         width={32}
         height={32}
         className="inline opacity-40 hover:opacity-100"
         alt="Icon of GitHub"
       />
     </a>
-  )
+  );
 }
 
 function DemoLink({ project }) {
@@ -24,7 +24,7 @@ function DemoLink({ project }) {
   return (
     <a href={demoLink} target="_blank">
       <Image
-        src={ExternalLinkIcon}
+        src={ExternalLink}
         width={32}
         height={32}
         className="ml-2 inline opacity-40 hover:opacity-100"
@@ -38,10 +38,9 @@ export default function ProjectItem({ project }) {
   const { title, description, techStack } = project;
 
   return (
-    <div className="border-2 border-gray-950 rounded-xl mx-4pl-2 p-2">
-
+    <div className="relative h-[20em] border-2 border-gray-950 bg-gray-950 rounded-xl p-2">
       {/* Project Title */}
-      <span className="text-xl font-semibold">{title}</span>
+      <span className="text-white text-xl font-semibold">{title}</span>
 
       {/* Description */}
       <p className="mt-1 mb-3">{description}</p>
@@ -57,9 +56,9 @@ export default function ProjectItem({ project }) {
       ))}
 
       {/* Project Links */}
-      <div className="mt-2 text-center">
-        {("repoLink" in project) && <GitHubLink project={project}/>}
-        {("demoLink" in project) && <DemoLink project={project}/>}
+      <div className="absolute mt-2 text-center bottom-4 right-0 left-0">
+        {"repoLink" in project && <GitHubLink project={project} />}
+        {"demoLink" in project && <DemoLink project={project} />}
       </div>
     </div>
   );
