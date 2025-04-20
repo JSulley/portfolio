@@ -19,8 +19,8 @@ const socialPlatforms = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2d3748] h-[10rem] mt-12">
-      <div className="grid grid-cols-2 h-[100%] place-items-center">
+    <footer className="mt-12 h-[10rem] bg-[#2d3748]">
+      <div className="grid h-[100%] grid-cols-2 place-items-center">
         <Image
           src="/personal-icon.svg"
           width={50}
@@ -33,7 +33,7 @@ export default function Footer() {
           {socialPlatforms.map((social) => (
             <a
               key={social.id}
-              className="inline-block mt-2 mx-3 first:mr-3 last:ml-3"
+              className="mx-3 mt-2 inline-block first:mr-3 last:ml-3"
               href={social.hyperlink}
               target="_blank"
             >

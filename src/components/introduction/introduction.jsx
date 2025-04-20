@@ -1,7 +1,7 @@
 export default function Introduction() {
   return (
     <div className="text-center">
-      <h1 className="text-white text-5xl my-2">James Sullivan</h1>
+      <h1 className="my-2 text-5xl text-white">James Sullivan</h1>
     </div>
   );
 }

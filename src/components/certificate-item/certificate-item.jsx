@@ -9,27 +9,31 @@ export default function CertificateItem({ certificate }) {
   } = certificate;
 
   return (
-    <div className="relative h-[30em] border-2 border-gray-950 bg-gray-950 rounded-xl p-2">
+    <div className="flex h-full flex-col rounded-xl border-2 border-gray-950 bg-gray-950 p-4">
       {/* Course Title */}
-      <span className="text-white text-xl font-semibold">{name}</span>
+      <span className="block text-xl font-semibold text-white">{name}</span>
 
       {/* Course Information */}
       <p>{institution}</p>
       <p>Completed: {dateReceived}</p>
-      <p className="break-all hyphens-auto my-3">{description}</p>
+      <p className="mb-3 mt-1 hidden md:line-clamp-2 lg:line-clamp-3">
+        {description}
+      </p>
 
       {/* Skills */}
-      {skillsLearned.map((skill) => (
-        <div
-          key={skill.id}
-          className="border-2 border-[#9ecaff]/10 bg-[#9ecaff]/40 text-[#9ecaff] rounded-xl mx-1 p-1 inline-block sm:max-lg:my-1 mb-2"
-        >
-          {skill.skill}
-        </div>
-      ))}
+      <div className="my-2">
+        {skillsLearned.map((skill) => (
+          <div
+            key={skill.id}
+            className="mx-1 mb-2 inline-block rounded-xl border-2 border-[#9ecaff]/10 bg-[#9ecaff]/40 p-1 text-[#9ecaff] sm:max-lg:my-1"
+          >
+            {skill.skill}
+          </div>
+        ))}
+      </div>
 
       {/* Link to Certificate */}
-      <div className="text-center">
+      <div className="mt-auto text-center">
         <a href={hyperlink} className="mt-2 hover:underline">
           View Certificate
         </a>

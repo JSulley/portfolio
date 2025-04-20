@@ -6,14 +6,12 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="mx-auto md:w-[900px] lg:w-[1024px]">
-      <main>
-        <Introduction />
-        <Projects />
-        <Education />
-        <Certificates />
-        <Footer />
-      </main>
-    </div>
+    <main>
+      <Introduction />
+      <Projects />
+      <Education />
+      <Certificates />
+      <Footer />
+    </main>
   );
 }

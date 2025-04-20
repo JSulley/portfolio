@@ -75,8 +75,8 @@ for (let i = 0; i < projectTitles.length; i++) {
 export default function Projects() {
   return (
     <div>
-      <h2 className="text-3xl my-6 text-center font-bold">Projects</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2 className="my-6 text-center text-3xl font-bold">Projects</h2>
+      <div className="mx-auto grid w-full max-w-sm max-w-xs gap-4 sm:max-w-xl md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
