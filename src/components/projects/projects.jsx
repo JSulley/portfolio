@@ -1,26 +1,23 @@
 import ProjectItem from "../project-item/project-item";
 
 const projectTitles = [
+  "Custom CI/CD Pipeline",
   "Perudo Game Implementation",
   "Portfolio",
-  "NASA Mission Control Project",
-  "Math Assessment",
   "Solar Cell Research Application",
 ];
 
 const projectDescriptions = [
-  "Terminal-based version of Perudo (Liar's Dice) using the C language",
+  "Currently developing a shell-script-driven CI/CD pipeline to automate build and test workflows for my Perudo game and other personal C projects. Focused on local automation, with plans to integrate GitHub Actions for remote builds and deployment.",
+  "Developing a terminal-based version of the classic Perudo game using C. Features a turn-based bidding system between a human player and a computer opponent, with full implementation of core game rules. Designed with a focus on portability, memory safety, and clean code structure.",
   "You're looking at it! What's infinite recursion you ask? Well, click on that external link icon below (the one next to the GitHub icon) and find out!",
-  "React app leverages a Node API that lets users schedule missions to go to a habitable Kepler Exoplanet.",
-  "A mini quiz covering some college algebra concepts.",
   "Shiny web app built for the Engineering department at Texas A&M University-Central Texas.",
 ];
 
 const projectSkills = [
+  ["Bash", "Linux/Unix"],
   ["C"],
   ["JavaScript", "Next.js", "Tailwind CSS"],
-  ["JavaScript", "Node.js", "Express.js"],
-  ["HTML", "CSS", "Bootstrap", "MathJax"],
   ["R", "Shiny", "ggplot2"],
 ];
 
@@ -30,15 +27,12 @@ const projectLinks = [
     demoLink: null,
   },
   {
+    repoLink: null,
+    demoLink: null,
+  },
+  {
     repoLink: "https://github.com/JSulley/portfolio",
     demoLink: "https://jamessullivan.dev",
-  },
-  {
-    repoLink: "https://github.com/JSulley/nasa-project",
-  },
-  {
-    repoLink: "https://github.com/JSulley/Math-Assessment",
-    demoLink: "https://jsulley.github.io/Math-Assessment",
   },
   {
     repoLink: "https://github.com/JSulley/Solar-Cell-Research-Application",
