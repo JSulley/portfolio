@@ -8,7 +8,7 @@ export const metadata = {
   description: "A portfolio website",
   metadataBase: new URL("https://jamessullivan.dev/"),
   openGraph: {
-    images: "/opg-image.png",
+    images: "/opengraph-image.png",
   },
 };
 
