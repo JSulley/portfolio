@@ -35,7 +35,7 @@ export default function Hero() {
       <p className="mt-4 max-w-xl text-sm text-[#d1d5db] sm:text-base md:text-lg">
         Hands-on experience in C, Bash, and CI/CD pipelines. I enjoy working
         close to the system, solving practical problems, and building software
-        that's easy to run, test, and maintain.
+        that&apos;s easy to run, test, and maintain.
       </p>
 
       {/* Buttons */}
