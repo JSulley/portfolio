@@ -1,18 +1,19 @@
 import Image from "next/image";
 import GitHub from "@/assets/icons/github.svg";
 import LinkedIn from "@/assets/icons/linkedin.svg";
+import { socialLinks } from "@/config/socialLinks";
 
 const socialPlatforms = [
   {
     id: 1,
     icon: GitHub,
-    hyperlink: "https://github.com/JSulley",
+    hyperlink: socialLinks.github,
     iconDesc: "Icon of GitHub",
   },
   {
     id: 2,
     icon: LinkedIn,
-    hyperlink: "https://linkedin.com/in/sullivan-james",
+    hyperlink: socialLinks.linkedin,
     iconDesc: "Icon of LinkedIn",
   },
 ];
