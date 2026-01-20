@@ -1,31 +1,29 @@
-import Image from "next/image";
-import GitHub from "@/assets/icons/github.svg";
-import ExternalLink from "@/assets/icons/external-link.svg";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 function GitHubLink({ project }) {
   return (
-    <a href={project.links.repoLink} target="_blank">
-      <Image
-        src={GitHub}
-        width={32}
-        height={32}
-        className="inline opacity-40 hover:opacity-100"
-        alt="Icon of GitHub"
-      />
+    <a
+      href={project.links.repoLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      title="View repository"
+      className="text-2xl transition hover:text-[#9ecaff] md:text-3xl"
+    >
+      <FiGithub />
     </a>
   );
 }
 
 function DemoLink({ project }) {
   return (
-    <a href={project.links.demoLink} target="_blank">
-      <Image
-        src={ExternalLink}
-        width={32}
-        height={32}
-        className="ml-2 inline opacity-40 hover:opacity-100"
-        alt="Icon of External Link"
-      />
+    <a
+      href={project.links.demoLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      title="View demo"
+      className="text-2xl transition hover:text-[#9ecaff] md:text-3xl"
+    >
+      <FiExternalLink />
     </a>
   );
 }
@@ -38,27 +36,48 @@ export default function ProjectItem({ project }) {
         {project.title}
       </span>
 
-      {/* Description */}
-      <p className="mb-3 mt-1 hidden md:line-clamp-2 lg:line-clamp-3">
-        {project.description}
-      </p>
+      {/* One-line description (always visible) */}
+      <p className="mt-1 text-sm text-gray-300">{project.description}</p>
+
+      {/* Bullets (hidden on small screens) */}
+      {project.bullets && project.bullets.length > 0 && (
+        <ul className="mt-3 hidden list-disc space-y-1 pl-5 text-sm text-gray-400 md:block">
+          {project.bullets.map((bullet, idx) => (
+            <li key={idx}>{bullet}</li>
+          ))}
+        </ul>
+      )}
 
       {/* Tech Stack */}
-      <div className="my-2">
-        {project.techStack.map((skill) => (
+      <div className="my-3 flex flex-wrap gap-2">
+        {project.tech.map((skill, idx) => (
           <div
-            key={skill.id}
-            className="m-1 inline-block rounded-xl border-2 border-[#9ecaff]/10 bg-[#9ecaff]/40 p-1 text-[#9ecaff]"
+            key={idx}
+            className="rounded-xl border-2 border-[#9ecaff]/10 bg-[#9ecaff]/40 px-2 py-1 text-xs text-[#9ecaff]"
           >
-            {skill.skill}
+            {skill}
           </div>
         ))}
       </div>
 
       {/* Project Links */}
-      <div className="mt-auto text-center">
-        {project.links.repoLink && <GitHubLink project={project} />}
-        {project.links.demoLink && <DemoLink project={project} />}
+      <div className="mt-auto flex justify-center gap-6 text-white">
+        {project.links.repoLink ? (
+          <GitHubLink project={project} />
+        ) : (
+          <FiGithub
+            title="Private repository"
+            className="cursor-not-allowed text-2xl text-sm text-gray-600 md:text-3xl"
+          />
+        )}
+        {project.links.demoLink ? (
+          <DemoLink project={project} />
+        ) : (
+          <FiExternalLink
+            title="Demo unavailable"
+            className="cursor-not-allowed text-2xl text-sm text-gray-600 md:text-3xl"
+          />
+        )}
       </div>
     </div>
   );
